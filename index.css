@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:3rem;
+    padding: 2rem;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-bottom:2rem;
+}
+.para {
+    font-size: 15px;
+    font-weight: 300;
+    
+    
+}
+header nav ul{
+    display: flex;
+    flex:start;
+    gap: 2rem;
+
+}
+header nav ul li{
+    list-style-type: none;
+}
+
+main{
+    width:100%;
+    display: grid;
+    
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 3fr auto;
+    grid-template-areas: 
+    "section1 section2"
+    "section3 section3";
+    gap: 1rem;
+
+
+}
+.section1{
+    grid-area: section1;
+    
+}
+.section2{
+    grid-area: section2;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    padding: 1rem;
+    
+    
+    
+}
+.section2 .new{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+    
+    padding: 1rem 0;
+    align-items: flex-start;
+    
+}
+.section2 h1{
+    color: hsl(35, 77%, 62%);
+    font-size: 2rem;
+}
+.section2 .new .content{
+    display: flex;
+   
+    flex-direction: column;
+    height:100%;
+    justify-content: space-between;
+
+}
+.section2 .new .content
+.section2 .new .content div .para{
+    padding: 1rem 0;
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+.section2 .new .content div #para{
+    border-bottom:none;
+}
+.section3{
+    grid-area: section3;
+    
+}
+
+.section1 .web3 img{
+    width: 100%;
+}
+.section1 .bottom{
+    display:flex;
+    gap:1rem;
+}
+
+    
+
+.section1 .bottom .heading{
+    
+    font-size: 1.8rem;
+    
+    padding: 1rem;
+    width:50%;
+
+}
+.section1 .bottom .article{
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.section1 .bottom .article button{
+    font-family: inherit;
+    padding: 1rem;
+    font-size: 0.8rem;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    color: hsl(36, 100%, 99%);
+    letter-spacing: 0.4rem;
+}
+
+main .section3{
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+}
+main .section3 .part{
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+main .section3 .part .img img{
+    width: 100%;
+}
+main .section3 .part .content{
+    display: flex;
+ 
+    flex-direction: column;
+    justify-content: space-between;
+}
+main .section3 .part .content h1{
+   
+    color: hsl(233, 8%, 79%);
+}
